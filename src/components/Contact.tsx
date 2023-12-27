@@ -1,6 +1,6 @@
 export const Contact: React.FC = () => {
 	return (
-		<section id='contact' className='relative z-10 m-auto p-36 overflow-hidden max-w-1150'>
+		<section id='contact' className='relative z-10 m-auto p-9 overflow-hidden max-w-1150'>
 			<div className='max-w-700 m-auto rounded-2xl'>
 				<div>
 					<h4 className='font-black text-center leading-none text-8xl text-white'>
@@ -37,7 +37,6 @@ export const Contact: React.FC = () => {
 								className='text-white fill-current group-hover:text-brand bg-icon'
 								stroke='currentColor'
 								fill='currentColor'
-								stroke-width='0'
 								viewBox='0 0 1024 1024'
 								height='2.4rem'
 								width='2.4rem'
