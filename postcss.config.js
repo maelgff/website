@@ -3,4 +3,7 @@ module.exports = {
     tailwindcss: {},
     autoprefixer: {},
   },
+  variants: {
+    fill: ['hover', 'focus'],
+  }
 }

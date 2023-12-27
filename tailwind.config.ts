@@ -24,6 +24,9 @@ const config: Config = {
       },
       height: {
         'header': 'calc(45px + 3.6rem)',
+      },
+      backgroundSize: {
+        'icon': '24px 24px',
       }
     },
   },
