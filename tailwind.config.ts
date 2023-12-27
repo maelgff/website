@@ -16,8 +16,15 @@ const config: Config = {
       colors: {
         'black-8': '#080808',
         'black-17': '#111',
-        'brand': '#0aff9d'
+        'brand': '#0aff9d',
+        'opaque': 'hsla(0,0%,7%,.25)'
       },
+      gridTemplateColumns: {
+        'custom': '60px 1fr'
+      },
+      height: {
+        'header': 'calc(45px + 3.6rem)',
+      }
     },
   },
   plugins: [],
