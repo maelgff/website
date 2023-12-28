@@ -23,6 +23,7 @@ const config: Config = {
       gridTemplateColumns: {
         'custom': '60px 1fr',
         'about': '1fr 300px',
+        'projects': '1fr 1fr',
       },
       height: {
         'header': 'calc(45px + 3.6rem)'

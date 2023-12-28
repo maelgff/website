@@ -51,7 +51,6 @@ export const About: React.FC = () => {
 								<svg
 									stroke='currentColor'
 									fill='currentColor'
-									stroke-width='0'
 									viewBox='0 0 1024 1024'
 									height='1em'
 									width='1em'
