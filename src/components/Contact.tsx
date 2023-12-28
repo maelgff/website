@@ -1,13 +1,15 @@
+import { Reveal } from './utils/Reveal'
+
 export const Contact: React.FC = () => {
 	return (
-		<section id='contact' className='relative z-10 m-auto p-9 overflow-hidden max-w-1150'>
+		<section id='contact' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150'>
 			<div className='max-w-700 m-auto rounded-2xl'>
-				<div>
+				<Reveal width='full'>
 					<h4 className='font-black text-center leading-none text-8xl text-white'>
 						Contact<span className='text-brand'>.</span>
 					</h4>
-				</div>
-				<div>
+				</Reveal>
+				<Reveal>
 					<p className='text-center font-extralight my-10 text-white text-lg'>
 						Shoot me an email if you want to connect! You can also find me on{' '}
 						<a
@@ -29,8 +31,8 @@ export const Contact: React.FC = () => {
 						</a>{' '}
 						if that's more your speed.
 					</p>
-				</div>
-				<div>
+				</Reveal>
+				<Reveal width='full'>
 					<a href='mailto:mael_geoffroy@hotmail.fr'>
 						<div className='group flex items-center justify-center w-fit m-auto text-2xl gap-3 text-white'>
 							<svg
@@ -47,7 +49,7 @@ export const Contact: React.FC = () => {
 							<span className='group-hover:text-brand'>mael_geoffroy@hotmail.fr</span>
 						</div>
 					</a>
-				</div>
+				</Reveal>
 			</div>
 		</section>
 	)

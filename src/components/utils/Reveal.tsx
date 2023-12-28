@@ -3,10 +3,10 @@ import { useEffect, useRef } from 'react'
 
 interface Props {
 	children: JSX.Element
-	width: 'fit-content' | 'full'
+	width?: 'fit-content' | 'full'
 }
 
-export const Reveal: React.FC<Props> = ({ children, width }) => {
+export const Reveal: React.FC<Props> = ({ children, width = 'fit-content' }) => {
 	const ref = useRef(null)
 	const isInView = useInView(ref, { once: true })
 	const mainControls = useAnimation()
