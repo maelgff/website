@@ -18,7 +18,7 @@ export const ExperiencePart: React.FC<Props> = ({
 	stack,
 }) => {
 	return (
-		<div className='mb-4 border-b border-[#232323] px-3 pb-6'>
+		<div className='mb-6 border-b border-[#232323] px-3 pb-6'>
 			<div className='flex items-center justify-between mb-3'>
 				<Reveal>
 					<span className='font-bold text-xl'>{company}</span>

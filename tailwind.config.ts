@@ -21,7 +21,8 @@ const config: Config = {
         'footer': 'linear-gradient(180deg, #111, #080808)'
       },
       gridTemplateColumns: {
-        'custom': '60px 1fr'
+        'custom': '60px 1fr',
+        'about': '1fr 300px',
       },
       height: {
         'header': 'calc(45px + 3.6rem)'
