@@ -25,9 +25,6 @@ const config: Config = {
         'about': '1fr 300px',
         'projects': '1fr 1fr',
       },
-      height: {
-        'header': 'calc(45px + 3.6rem)'
-      },
       backgroundSize: {
         'icon': '24px 24px',
       },

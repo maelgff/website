@@ -23,7 +23,9 @@ export const Intro: React.FC<{}> = () => {
 				</Reveal>
 				<Reveal>
 					<button
-						onClick={() => document.getElementById('contact')?.scrollIntoView()}
+						onClick={() =>
+							document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+						}
 						className='bg-brand z-20 overflow-hidden rounded text-lg text-black-8 py-3 px-6 cursor-pointer border-none'
 					>
 						Contact me

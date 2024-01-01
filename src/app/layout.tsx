@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang='en'>
 			<body
-				className={`${poppins.className} ${poppins.variable} bg-black-17 grid grid-cols-custom min-h-screen `}
+				className={`${poppins.className} ${poppins.variable} scroll-smooth bg-black-17 grid grid-cols-custom min-h-screen `}
 			>
 				<ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
 			</body>
