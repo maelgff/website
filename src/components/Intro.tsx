@@ -2,7 +2,7 @@ import { Reveal } from './utils/Reveal'
 
 export const Intro: React.FC<{}> = () => {
 	return (
-		<section className='relative z-10 m-auto p-24 overflow-hidden max-w-1150 mb-24'>
+		<section id='home' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150 mb-24'>
 			<div className='relative z-10 my-12'>
 				<Reveal>
 					<h1 className='font-black leading-[1.1] text-8xl'>
