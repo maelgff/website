@@ -16,7 +16,7 @@ export const Contact: React.FC = () => {
 							className='text-brand hover:underline'
 							target='_blank'
 							rel='nofollow'
-							href='https://www.linkedin.com'
+							href='https://www.linkedin.com/in/mael-geoffroy/'
 						>
 							Linkedin
 						</a>{' '}
@@ -25,7 +25,7 @@ export const Contact: React.FC = () => {
 							className='text-brand hover:underline'
 							target='_blank'
 							rel='nofollow'
-							href='https://www.twitter.com'
+							href='https://twitter.com/mael_gff'
 						>
 							Twitter
 						</a>{' '}

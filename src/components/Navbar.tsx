@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
 						onClick={() => {
 							setActiveSection(link.href)
 						}}
-						className={`w-full h-[110px] text-lg font-extralight text-white flex items-center justify-center [writing-mode:vertical-lr] hover:bg-black-17 hover:opacity-100 hover:border-r hover:border-brand ${
+						className={`w-full h-[110px] text-lg font-extralight text-white flex items-center justify-center flex-shrink-0 [writing-mode:vertical-lr] hover:bg-black-17 hover:opacity-100 hover:border-r hover:border-brand ${
 							activeSection === link.href
 								? 'border-r border-brand opacity-100'
 								: 'border-transparent opacity-50'

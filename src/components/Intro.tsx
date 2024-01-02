@@ -1,9 +1,10 @@
+import { WaterdropGrid } from './part/WaterdropGrid'
 import { Reveal } from './utils/Reveal'
 
 export const Intro: React.FC<{}> = () => {
 	return (
 		<section id='home' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150 mb-24'>
-			<div className='relative z-10 my-12'>
+			<div className='relative z-10 my-12 w-fit'>
 				<Reveal>
 					<h1 className='font-black leading-[1.1] text-8xl'>
 						Hey, I'm Mael<span className='text-brand'>.</span>
@@ -32,6 +33,7 @@ export const Intro: React.FC<{}> = () => {
 					</button>
 				</Reveal>
 			</div>
+			<WaterdropGrid />
 		</section>
 	)
 }

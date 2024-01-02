@@ -25,6 +25,7 @@ const Home: React.FC<{}> = () => {
 				handleVisibilityChange(entry.isIntersecting, entry)
 			})
 		})
+		//todo, use enum and a loop
 		observer.observe(document.getElementById('home')!)
 		observer.observe(document.getElementById('about')!)
 		observer.observe(document.getElementById('projects')!)
