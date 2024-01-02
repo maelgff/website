@@ -4,6 +4,7 @@ export const SocialNetworks: React.FC<{}> = () => {
 			<span>
 				<a
 					href='https://www.linkedin.com/in/mael-geoffroy/'
+					aria-label='Link to my Linkedin'
 					target='_blank'
 					className='opacity-50 hover:opacity-100'
 				>
@@ -21,6 +22,7 @@ export const SocialNetworks: React.FC<{}> = () => {
 			<span>
 				<a
 					href='https://github.com/maelgff'
+					aria-label='Link to my Github'
 					target='_blank'
 					className='opacity-50 hover:opacity-100'
 				>
@@ -38,6 +40,7 @@ export const SocialNetworks: React.FC<{}> = () => {
 			<span>
 				<a
 					href='https://twitter.com/mael_gff'
+					aria-label='Link to my Twitter'
 					target='_blank'
 					className='opacity-50 hover:opacity-100'
 				>

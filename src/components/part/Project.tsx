@@ -57,6 +57,7 @@ export const Project: React.FC<Props> = ({
 							{githubLink && (
 								<a
 									href={githubLink}
+									aria-label='Link to the source code'
 									className='opacity-75 transition-opacity duration-300 hover:opacity-100'
 								>
 									<svg
@@ -73,6 +74,7 @@ export const Project: React.FC<Props> = ({
 							)}
 							<a
 								href={link}
+								aria-label='Link to the project'
 								className='opacity-75 transition-opacity duration-300 hover:opacity-100'
 							>
 								<svg

@@ -16,6 +16,7 @@ export const Contact: React.FC = () => {
 							className='text-brand hover:underline'
 							target='_blank'
 							rel='nofollow'
+							aria-label='My Linkedin account'
 							href='https://www.linkedin.com/in/mael-geoffroy/'
 						>
 							Linkedin
@@ -25,6 +26,7 @@ export const Contact: React.FC = () => {
 							className='text-brand hover:underline'
 							target='_blank'
 							rel='nofollow'
+							aria-label='My Twitter account'
 							href='https://twitter.com/mael_gff'
 						>
 							Twitter
@@ -37,6 +39,7 @@ export const Contact: React.FC = () => {
 						<div className='group flex items-center justify-center w-fit m-auto text-2xl gap-3 text-white'>
 							<svg
 								className='text-white fill-current group-hover:text-brand bg-icon'
+								aria-label='Send me an email'
 								stroke='currentColor'
 								fill='currentColor'
 								viewBox='0 0 1024 1024'

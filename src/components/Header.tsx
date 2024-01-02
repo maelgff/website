@@ -6,6 +6,7 @@ export const Header: React.FC = () => {
 			<SocialNetworks />
 			<a
 				href='/cv.pdf'
+				aria-label='My resume downloadable here'
 				download='CV_MAEL_GEOFFROY'
 				className='text-md rounded cursor-pointer bg-transparent text-brand font-light border-brand border px-8 py-4'
 			>

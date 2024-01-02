@@ -16,6 +16,7 @@ export const Navbar: React.FC = () => {
 				return (
 					<a
 						key={`menu-item-${link.href}`}
+						aria-label={link.label}
 						onClick={() => {
 							document
 								.getElementById(link.href.replace('#', ''))

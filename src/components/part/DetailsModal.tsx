@@ -63,6 +63,7 @@ export const DetailsModal: React.FC<Props> = ({ activeProject }) => {
 											{activeProject?.githubLink && (
 												<a
 													href={activeProject?.githubLink}
+													aria-label='Link to the source code'
 													target='_blank'
 													className='flex items-center gap-1 text-sm text-brand hover:underline outline-0'
 												>
@@ -81,6 +82,7 @@ export const DetailsModal: React.FC<Props> = ({ activeProject }) => {
 											)}
 											<a
 												href={activeProject?.link}
+												aria-label='Link to the project'
 												target='_blank'
 												className='flex items-center gap-1 text-sm text-brand hover:underline outline-0'
 											>
