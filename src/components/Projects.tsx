@@ -4,8 +4,21 @@ import imgLydia from '../assets/lydia.png'
 import imgMoneyz from '../assets/moneyz.png'
 import imgSaverglass from '../assets/saverglass.png'
 import imgInsurance from '../assets/insurance.png'
+import { DetailsModal } from './part/DetailsModal'
+import { useState } from 'react'
+import { StaticImageData } from 'next/image'
+
+export type ProjectType = {
+	image: StaticImageData
+	title: string
+	technos: string
+	descriptionLines: string[]
+	githubLink?: string
+	link: string
+}
 
 export const Projects: React.FC<{}> = () => {
+	const [activeProject, setActiveProject] = useState<ProjectType>()
 	return (
 		<section id='projects' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150'>
 			<div className='flex items-center gap-10 mb-10 flex-row'>
@@ -28,6 +41,7 @@ export const Projects: React.FC<{}> = () => {
 					}
 					technos={'Worpress - Php'}
 					link={'https://www.lydia-app.com/en'}
+					setActiveProject={setActiveProject}
 				/>
 				<Project
 					name='Moneyz'
@@ -38,6 +52,7 @@ export const Projects: React.FC<{}> = () => {
 					technos={'Vite - React TS - Chakra - EsLint - Pocketbase'}
 					link={'https://maelwishlist.netlify.app/'}
 					githubLink='https://github.com/maelgff/moneyz'
+					setActiveProject={setActiveProject}
 				/>
 				<Project
 					name='Saverglass'
@@ -47,6 +62,7 @@ export const Projects: React.FC<{}> = () => {
 					}
 					technos={'jQuery - Php - Drupal'}
 					link={'https://www.saverglass.com/en'}
+					setActiveProject={setActiveProject}
 				/>
 				<Project
 					name='Lydia student insurance'
@@ -57,8 +73,10 @@ export const Projects: React.FC<{}> = () => {
 					technos={'Vite - React TS - Chakra - Jest - React testing library - EsLint - Go'}
 					link={'https://services.lydia-app.com/front-student-insurance/'}
 					githubLink='https://github.com/LydiaSolutions/front-student-insurance'
+					setActiveProject={setActiveProject}
 				/>
 			</div>
+			<DetailsModal activeProject={activeProject} />
 		</section>
 	)
 }

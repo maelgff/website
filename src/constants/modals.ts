@@ -1,0 +1,3 @@
+export const MODALS_NAMES = {
+	DETAILS_MODAL: 'DETAILS_MODAL'
+}

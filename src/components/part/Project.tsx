@@ -1,5 +1,8 @@
-import { Reveal } from '../utils/Reveal'
+import { Reveal } from '@/components/utils/Reveal'
+import { MODALS_NAMES } from '@/constants/modals'
+import { useModals } from '@/hooks/useModals'
 import Image, { StaticImageData } from 'next/image'
+import { ProjectType } from '../Projects'
 
 interface Props {
 	image: StaticImageData
@@ -8,6 +11,7 @@ interface Props {
 	technos: string
 	link: string
 	githubLink?: string
+	setActiveProject: (project: ProjectType) => void
 }
 
 export const Project: React.FC<Props> = ({
@@ -17,11 +21,26 @@ export const Project: React.FC<Props> = ({
 	technos,
 	link,
 	githubLink,
+	setActiveProject,
 }) => {
+	const { openModal } = useModals()
 	return (
 		<Reveal>
 			<>
-				<div className=' relative w-full cursor-pointer aspect-video bg-[#232323] rounded-lg overflow-hidden'>
+				<div
+					onClick={() => {
+						openModal(MODALS_NAMES.DETAILS_MODAL)
+						setActiveProject({
+							image: image,
+							title: name,
+							technos: technos,
+							descriptionLines: [description],
+							githubLink: githubLink,
+							link: link,
+						})
+					}}
+					className='relative w-full cursor-pointer aspect-video bg-[#232323] rounded-lg overflow-hidden'
+				>
 					<Image
 						width='200'
 						height='100'
@@ -75,7 +94,20 @@ export const Project: React.FC<Props> = ({
 					<Reveal>
 						<p className='font-extralight'>
 							{description}{' '}
-							<span className='text-brand cursor-pointer font-normal hover:underline'>
+							<span
+								onClick={() => {
+									openModal(MODALS_NAMES.DETAILS_MODAL)
+									setActiveProject({
+										image: image,
+										title: name,
+										technos: technos,
+										descriptionLines: [description],
+										githubLink: githubLink,
+										link: link,
+									})
+								}}
+								className='text-brand cursor-pointer font-normal hover:underline'
+							>
 								{'Learn more >'}
 							</span>
 						</p>

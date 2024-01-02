@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 import ActiveSectionContextProvider from '@/context/ActiveSectionContext'
+import { ModalsWrapper } from '@/context/ModalsContext'
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -21,7 +22,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body
 				className={`${poppins.className} ${poppins.variable} scroll-smooth bg-black-17 grid grid-cols-custom min-h-screen `}
 			>
-				<ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
+				<ModalsWrapper>
+					<ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
+				</ModalsWrapper>
 			</body>
 		</html>
 	)
