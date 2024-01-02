@@ -1,6 +1,6 @@
 export const SocialNetworks: React.FC<{}> = () => {
 	return (
-		<div className='flex pt-[10px] gap-6'>
+		<div className='flex gap-6'>
 			<span>
 				<a
 					href='https://www.linkedin.com/in/mael-geoffroy/'

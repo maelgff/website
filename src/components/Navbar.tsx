@@ -7,8 +7,8 @@ export const Navbar: React.FC = () => {
 	return (
 		<nav className='sticky h-svh bg-black-8 top-0 left-0 flex flex-col items-center'>
 			<span
-				onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
-				className='cursor-pointer xt-2xl font-black text-white w-[45px] h-[45px] my-7 flex items-center justify-center bg-black-17 rounded'
+				onClick={() => document.querySelector('body')?.scrollIntoView({ behavior: 'smooth' })}
+				className='cursor-pointer xt-2xl font-black text-white w-[45px] h-[45px] min-h-[45px] my-[18px] flex items-center justify-center bg-black-17 rounded'
 			>
 				M<span className='text-brand'>.</span>
 			</span>

@@ -2,7 +2,7 @@ import anime from 'animejs'
 
 export const WaterdropGrid = () => {
 	const GRID_WIDTH = 25
-	const GRID_HEIGTH = 500
+	const GRID_HEIGTH = 600
 
 	const DotGrid = () => {
 		const dots = []
@@ -37,7 +37,7 @@ export const WaterdropGrid = () => {
 						key={`dot-${i}-${j}`}
 						onClick={handleClick}
 						data-index={index}
-						className='group cursor-crosshair rounded-full p-[8px] transition-colors hover:bg-slate-600'
+						className='group cursor-crosshair rounded-full p-[8px] transition-colors hover:bg-slate-600 h-min'
 					>
 						<div
 							data-index={index}

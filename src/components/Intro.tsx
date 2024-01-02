@@ -17,9 +17,8 @@ export const Intro: React.FC<{}> = () => {
 				</Reveal>
 				<Reveal>
 					<p className='font-extralight my-6 max-w-[700px] text-lg'>
-						I've spent the last 5 years building and scaling software for some pretty cool
-						companies. I also teach people to paint online (incase you've got an empty canvas layin'
-						around 🎨). Let's connect!
+						I've spent almost the last 6 years building and scaling web apps for some pretty cool
+						companies. I also love to teach or help people. Let's connect !
 					</p>
 				</Reveal>
 				<Reveal>

@@ -2,7 +2,7 @@ import { Reveal } from './utils/Reveal'
 
 export const Contact: React.FC = () => {
 	return (
-		<section id='contact' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150'>
+		<section id='contact' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150 mt-3'>
 			<div className='max-w-700 m-auto rounded-2xl'>
 				<Reveal width='full'>
 					<h4 className='font-black text-center leading-none text-8xl text-white'>

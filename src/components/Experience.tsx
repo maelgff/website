@@ -20,18 +20,76 @@ export const Experience: React.FC = () => {
 				duration='April 2021 - Now'
 				position='Lead front'
 				place='Paris'
-				description='I help build and scale Google Photos. Increased throughput of our primary services by
-				70%. Migrated backend service from Java to Go. Also helped make it look prettier.'
-				stack={['React', 'Typescript']}
+				descriptionLines={[
+					'• Mentoring and coaching',
+					'Provide technical leadership and guidance to the development team. Foster aculture of learning and knowledge sharing among developers. Lead the front-end team and ensure strong links between developers',
+					'• Technical vision and roadmap',
+					'Define and continuously improve developer integration. Help create an attractive environment for developers',
+					' Migration of all front-end projects to React TypeScript, scss, addition of CI/CD via github actions, unit tests with Jest, react-testing-librairy, e2e tests via Playwright, translations via Phrase, react & scss linter, tech and functional documentation.',
+					'Creation of a Lydia ui-kit, use of storybook & Chakra',
+					'Creation of several internal tools, ot configure bank aggregation (AIS / PIS), manage payments via IBAN and enable fraud levels to be assessed.',
+					'User event tracking via Rudderstack &Amplitude',
+					'Migration and enhancement of the platform managing user KYC, adding an admin section, automatic identity review via OCR',
+					'• Hiring and integration',
+					'Define and continuously improve developer integration',
+					'',
+				]}
+				stack={[
+					'React',
+					'Next',
+					'Typescript',
+					'Chakra',
+					'Tailwind',
+					'Jest',
+					'Playwright',
+					'Cypress',
+					'Symfony',
+					'MySQL',
+				]}
 			/>
 			<ExperiencePart
 				company='Ipsosenso'
 				duration='February 2018 - April 2021'
 				position='Full stack developer'
 				place='Paris'
-				description='I help build and scale Google Photos. Increased throughput of our primary services by
-				70%. Migrated backend service from Java to Go. Also helped make it look prettier.'
-				stack={['React', 'Typescript']}
+				descriptionLines={[
+					'Design, integration, front and back-end development and production launch of web projects.',
+					"Creation of the Rurale insurance space and redesign of Veolia's Greenpath platform in React TS & Java Spring.",
+					'Redesign of websites in React & PHP Symfony and Drupal, for Saverglass and Corum. Website redesign in Java Struts2 and custom CMS for Facom de Stanley Black & Decker, La Rurale and Malakoff Humanis.',
+					'Presentation of final projects to customers, popularizing and explaining the work carried out.',
+				]}
+				stack={[
+					'React',
+					'Typescript',
+					'Javascript',
+					'jQuery',
+					'Java',
+					'Spring',
+					'Struts',
+					'Drupal',
+				]}
+			/>
+			<ExperiencePart
+				company='Orange Business Services'
+				duration='February 2017 - August 2017'
+				position='iOS developer'
+				place='Paris'
+				descriptionLines={[
+					'Consulting mission for the International Committee of the Red Cross.',
+					'Design and development of an iOS application coded in Objective C (functionalities : message reception and team geolocation).',
+				]}
+				stack={['Objective C']}
+			/>
+			<ExperiencePart
+				company='Port Adhoc'
+				duration='February 2016 - May 2016'
+				position='Full stack developer'
+				place='Paris'
+				descriptionLines={[
+					'Work on databases, integration of external data.',
+					'Work on databases, integration of external data. Updating the WordPress site.',
+				]}
+				stack={['Php', 'MySQL', 'Wordpress']}
 			/>
 		</section>
 	)

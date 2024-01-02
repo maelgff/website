@@ -19,34 +19,34 @@ export const About: React.FC = () => {
 				<div>
 					<Reveal>
 						<p className='mb-6 text-lg font-extralight first-letter:font-bold first-letter:float-left first-letter:mr-1 first-letter:text-2xl first-letter:p-3 first-letter:bg-[#232323] first-letter:text-white first-letter:rounded'>
-							Hey! I'm Bob, if you haven't already gathered that by now. I'm a painter turned
-							software engineer from Daytona, Florida. I specialize in the backend, primarily Node
-							and Rust, but love building with whatever tools are right for the job.
+							Hey ! I'm Mael, if you haven't already gathered that by now. I'm a full stack
+							developper from Paris, France. I specialize in the frontend, primarily React and then
+							Next JS, but love building with whatever tools are right for the job.
 						</p>
 					</Reveal>
 					<Reveal>
 						<p className='mb-6 text-lg font-extralight'>
-							I currently work for Google on Google Photos. I also toss in my ¢2 with the design
-							systems teams from time to time (once an artist, always an artist, amirite?).
+							I currently work for Lydia app on the desktop verison we are buiding from scratch. I
+							also like to explore new things and learn new technos.
 						</p>
 					</Reveal>
 					<Reveal>
 						<p className='mb-6 text-lg font-extralight'>
-							Outside of work, I still love to paint. Any given Sunday you'll find me scribbling
-							some happy clouds with my son ☁️ I even teach courses online if you're looking to
-							learn!
+							Outside of work, I love to watch and do sport. I'm doing tennis in competition. 🎾 I
+							am currently ranked 5/6 in France and also played for the Stellenbosch university in
+							South Africa. I also like play some video games from time to time.
 						</p>
 					</Reveal>
 					<Reveal>
 						<p className='mb-6 text-lg font-extralight'>
-							I'm passively looking for new positions where I can merge my love for code with my
-							love for the canvas. If you think you've got an opening that I might like, let's
-							connect 🔗
+							I'm passively looking for new positions where I can merge my love for code with a
+							really strong motivation to participate to an innovative company. If you think you've
+							got an opening that I might like, let's connect 🔗
 						</p>
 					</Reveal>
 					<Reveal>
 						<div className='flex items-center gap-4'>
-							<div className='flex items-center gap-2 text-brand text-lg pt-[10px]'>
+							<div className='flex items-center gap-2 text-brand text-lg'>
 								<span>My links</span>
 								<svg
 									stroke='currentColor'

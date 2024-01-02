@@ -1,5 +1,9 @@
 import { Project } from './part/Project'
 import { Reveal } from './utils/Reveal'
+import imgLydia from '../assets/lydia.png'
+import imgMoneyz from '../assets/moneyz.png'
+import imgSaverglass from '../assets/saverglass.png'
+import imgInsurance from '../assets/insurance.png'
 
 export const Projects: React.FC<{}> = () => {
 	return (
@@ -16,10 +20,44 @@ export const Projects: React.FC<{}> = () => {
 				</h3>
 			</div>
 			<div className='grid gap-8 grid-cols-projects'>
-				<Project />
-				<Project />
-				<Project />
-				<Project />
+				<Project
+					name='Lydia website'
+					image={imgLydia}
+					description={
+						'Lydia public website - You can see all the offers from Lydia, cards, accounts and help'
+					}
+					technos={'Worpress - Php'}
+					link={'https://www.lydia-app.com/en'}
+				/>
+				<Project
+					name='Moneyz'
+					image={imgMoneyz}
+					description={
+						'Personal project - An app aggregating all your bank accounts and managing your wishlists'
+					}
+					technos={'Vite - React TS - Chakra - EsLint - Pocketbase'}
+					link={'https://maelwishlist.netlify.app/'}
+					githubLink='https://github.com/maelgff/moneyz'
+				/>
+				<Project
+					name='Saverglass'
+					image={imgSaverglass}
+					description={
+						'Saverglass public website - You can see all the products and expertise Saverglass offers'
+					}
+					technos={'jQuery - Php - Drupal'}
+					link={'https://www.saverglass.com/en'}
+				/>
+				<Project
+					name='Lydia student insurance'
+					image={imgInsurance}
+					description={
+						'This project propose a form for students that will go abroad. After writting his info a student will be able to get a price for his insurance and pay it either by Lydia or by credit card'
+					}
+					technos={'Vite - React TS - Chakra - Jest - React testing library - EsLint - Go'}
+					link={'https://services.lydia-app.com/front-student-insurance/'}
+					githubLink='https://github.com/LydiaSolutions/front-student-insurance'
+				/>
 			</div>
 		</section>
 	)

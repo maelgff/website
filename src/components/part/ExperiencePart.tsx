@@ -5,13 +5,13 @@ interface Props {
 	duration: string
 	position: string
 	place: string
-	description: string
+	descriptionLines: string[]
 	stack: string[]
 }
 
 export const ExperiencePart: React.FC<Props> = ({
 	company,
-	description,
+	descriptionLines,
 	duration,
 	position,
 	place,
@@ -36,7 +36,15 @@ export const ExperiencePart: React.FC<Props> = ({
 				</Reveal>
 			</div>
 			<Reveal>
-				<p className='mb-4 font-extralight text-lg'>{description}</p>
+				<>
+					{descriptionLines.map((l: string, idx: number) => {
+						return (
+							<p key={`desc-line-${idx}`} className='mb-4 font-extralight text-lg'>
+								{l}
+							</p>
+						)
+					})}
+				</>
 			</Reveal>
 			<Reveal>
 				<div className='flex flex-wrap gap-3'>
