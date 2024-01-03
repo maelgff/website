@@ -48,7 +48,7 @@ export const About: React.FC = () => {
 						</p>
 					</Reveal>
 					<Reveal>
-						<div className='flex items-center gap-4'>
+						<div className='flex items-center gap-4 mb-12'>
 							<div className='flex items-center gap-2 text-brand text-lg'>
 								<span>My links</span>
 								<svg

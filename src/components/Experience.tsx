@@ -52,7 +52,7 @@ export const Experience: React.FC = () => {
 			/>
 			<ExperiencePart
 				company='Ipsosenso'
-				duration='February 2018 - April 2021'
+				duration='Feb 2018 - April 2021'
 				position='Full stack developer'
 				place='Paris'
 				descriptionLines={[
@@ -74,7 +74,7 @@ export const Experience: React.FC = () => {
 			/>
 			<ExperiencePart
 				company='Orange Business Services'
-				duration='February 2017 - August 2017'
+				duration='Feb 2017 - Aug 2017'
 				position='iOS developer'
 				place='Paris'
 				descriptionLines={[
@@ -85,7 +85,7 @@ export const Experience: React.FC = () => {
 			/>
 			<ExperiencePart
 				company='Port Adhoc'
-				duration='February 2016 - May 2016'
+				duration='Feb 2016 - May 2016'
 				position='Full stack developer'
 				place='Paris'
 				descriptionLines={[

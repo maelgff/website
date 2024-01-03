@@ -52,7 +52,9 @@ export const Project: React.FC<Props> = ({
 				<div className='my-4'>
 					<Reveal width='full'>
 						<div className='flex items-center gap-3'>
-							<h4 className='font-bold max-w-[calc(100% - 150px)] text-xl flex-shrink-0'>{name}</h4>
+							<h4 className='font-bold max-w-[calc(100% - 150px)] md:text-xl text-md flex-shrink-0'>
+								{name}
+							</h4>
 							<div className='w-full h-[1px] opacity-30 bg-[#ebecf3]'></div>
 							{githubLink && (
 								<a
