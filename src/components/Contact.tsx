@@ -2,10 +2,13 @@ import { Reveal } from './utils/Reveal'
 
 export const Contact: React.FC = () => {
 	return (
-		<section id='contact' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150 mt-3'>
+		<section
+			id='contact'
+			className='relative z-10 m-auto md:p-24 px-6 py-[72px] overflow-hidden max-w-1150 mt-3'
+		>
 			<div className='max-w-700 m-auto rounded-2xl'>
 				<Reveal width='full'>
-					<h4 className='font-black text-center leading-none text-8xl text-white'>
+					<h4 className='font-black text-center leading-none md:text-8xl text-[56px] text-white'>
 						Contact<span className='text-brand'>.</span>
 					</h4>
 				</Reveal>
@@ -36,7 +39,7 @@ export const Contact: React.FC = () => {
 				</Reveal>
 				<Reveal width='full'>
 					<a href='mailto:mael_geoffroy@hotmail.fr'>
-						<div className='group flex items-center justify-center w-fit m-auto text-2xl gap-3 text-white'>
+						<div className='group flex items-center justify-center w-fit m-auto md:text-2xl text-lg gap-3 text-white'>
 							<svg
 								className='text-white fill-current group-hover:text-brand bg-icon'
 								aria-label='Send me an email'

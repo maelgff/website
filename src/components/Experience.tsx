@@ -3,11 +3,14 @@ import { Reveal } from './utils/Reveal'
 
 export const Experience: React.FC = () => {
 	return (
-		<section id='experience' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150'>
+		<section
+			id='experience'
+			className='relative z-10 m-auto md:p-24 px-6 py-[72px] overflow-hidden max-w-1150'
+		>
 			<div className='flex items-center gap-10 mb-10 flex-row'>
 				<h3>
 					<Reveal width='full'>
-						<span className='font-black text-6xl text-white'>
+						<span className='font-black md:text-6xl text-4xl text-white'>
 							Experience
 							<span className='text-brand'>.</span>
 						</span>

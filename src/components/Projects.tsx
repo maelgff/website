@@ -20,19 +20,22 @@ export type ProjectType = {
 export const Projects: React.FC<{}> = () => {
 	const [activeProject, setActiveProject] = useState<ProjectType>()
 	return (
-		<section id='projects' className='relative z-10 m-auto p-24 overflow-hidden max-w-1150'>
+		<section
+			id='projects'
+			className='relative z-10 m-auto md:p-24 px-6 py-[72px] overflow-hidden max-w-1150'
+		>
 			<div className='flex items-center gap-10 mb-10 flex-row'>
 				<div className='w-full h-[1px] opacity-30 bg-[#ebecf3]'></div>
 				<h3>
 					<Reveal width='full'>
-						<span className='font-black text-6xl text-white'>
+						<span className='font-black md:text-6xl text-4xl text-white'>
 							Projects
 							<span className='text-brand'>.</span>
 						</span>
 					</Reveal>
 				</h3>
 			</div>
-			<div className='grid gap-8 grid-cols-projects'>
+			<div className='grid gap-8 md:grid-cols-projects grid-cols-1'>
 				<Project
 					name='Lydia website'
 					image={imgLydia}

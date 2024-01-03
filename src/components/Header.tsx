@@ -2,7 +2,7 @@ import { SocialNetworks } from './part/SocialNetworks'
 
 export const Header: React.FC = () => {
 	return (
-		<header className='sticky top-0 flex h-[80px] items-center justify-between z-20 text-md font-bold backdrop-blur-md bg-opaque px-[12px]'>
+		<header className='sticky top-0 flex h-[80px] items-center justify-between z-20 text-md font-bold backdrop-blur-md bg-opaque md:px-9 px-3'>
 			<SocialNetworks />
 			<a
 				href='/cv.pdf'
