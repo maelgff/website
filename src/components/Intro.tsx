@@ -21,7 +21,7 @@ export const Intro: React.FC<{}> = () => {
 				<Reveal>
 					<p className='font-extralight my-6 max-w-[700px] text-lg'>
 						I've spent almost the last 6 years building and scaling web apps for some pretty cool
-						companies. I also love to teach or help people. Let's connect !
+						companies. I also love to teach and help people. Let's connect !
 					</p>
 				</Reveal>
 				<Reveal>
